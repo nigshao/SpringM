@@ -19,6 +19,7 @@ public class UploadHandler {
 		System.out.println("inputStream.available() : "+inputStream.available());
 		System.out.println("inputStream : "+inputStream);
 		multipartFile.transferTo(new File("D:\\4444\\"+multipartFile.getOriginalFilename()));
+		System.out.println("--------------");
 		return "uploadOK"; //增加成功页面: /views/success.jsp
 	}
 }
